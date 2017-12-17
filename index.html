@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Off Canvas Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="./assets/style.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <nav class="navbar navbar-fixed-top navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">The Magic Of Giphy</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+
+      <div class="row row-offcanvas row-offcanvas-right">
+
+        <div class="col-xs-12 col-sm-9">
+          <p class="pull-right visible-xs">
+            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
+          </p>
+          <div class="jumbotron">
+            <h1>Lets Explore Some Gifs!</h1>
+            <p>Select any of the options to the right to see some Gifs. Or type in a new Gif topic below to create a new option.</p>
+            <div class="row">
+              <div class="col-lg-6">
+              </div>
+              <div class="col-lg-6">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="addMovie" placeholder="Search for...">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" id="add-movie" type="button">Go!</button>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+          <div class="row">
+            <div class="col-xs-6 col-lg-4">
+              <img src="https://media.giphy.com/media/jcGeziN4nBGyk/giphy.gif" alt="Placeholder Gif" width="200" height="200" class="gif" id="randomImage0">
+            </div>
+
+            <div class="col-xs-6 col-lg-4">
+              <img src="https://media1.tenor.com/images/b8b57f1ebe977ed2c0420e072caee2cd/tenor.gif?itemid=4809165" alt="Placeholder Gif" width="200" height="200" class="gif" id="randomImage1">
+            </div>
+
+            <div class="col-xs-6 col-lg-4">
+              <img src="https://media.tenor.com/images/5ba3c1d82914980430e61307886dddf5/tenor.gif" alt="Placeholder Gif" width="200" height="200" class="gif" id="randomImage2">
+            </div>
+
+          </div>
+
+          <div class="row" style="margin-top: 10px;">
+            <div class="col-xs-6 col-lg-4">
+              <img src="https://blog.walls.io/wp-content/uploads/sites/12/2017/04/bring-it-on.gif" alt="Placeholder Gif" width="200" height="200" class="gif" id="randomImage3">
+            </div>
+            <div class="col-xs-6 col-lg-4">
+              <img src="https://media.tenor.com/images/224a939e6395a115cf7fb99db5c24393/tenor.gif" alt="Placeholder Gif" width="200" height="200" class="gif" id="randomImage4">
+            </div>
+            <div class="col-xs-6 col-lg-4">
+              <img src="http://4.bp.blogspot.com/-kP2J-7AvU2E/UYLQ4YQnZiI/AAAAAAAAElI/V8Gje6_JUQY/s1600/key1Z+-+Imgur.gif" alt="Placeholder Gif" width="200" height="200" class="gif" id="randomImage5">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
+          <div class="list-group" id="button-container">
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <footer>
+        <p>&copy; 2017 Schuyler Van Ark</p>
+      </footer>
+
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="./assets/logic.js"></script>
+  </body>
+</html>
