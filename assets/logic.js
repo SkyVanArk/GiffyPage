@@ -31,7 +31,7 @@ $(document).ready(function () {
       	var searchTag = $(this).html();
       	console.log(searchTag)
 
-      	var queryURL = `http://api.giphy.com/v1/gifs/search?q=${searchTag}&api_key=dc6zaTOxFJmzC&limit=6`;
+      	var queryURL = `https://api.giphy.com/v1/gifs/search?q=${searchTag}&api_key=dc6zaTOxFJmzC&limit=6`;
 
     $.ajax({
                 url: queryURL,
