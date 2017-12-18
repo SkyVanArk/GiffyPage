@@ -24,12 +24,14 @@ $(document).ready(function () {
 	if (movie) {
         searches.push(movie);
         renderButtons();
+	$("#addMovie").val("");
       };
 	 })
 	 
 	$(document).on('click', "button.movieButton", function() {
       	var searchTag = $(this).html();
       	console.log(searchTag)
+		
 
       	var queryURL = `https://api.giphy.com/v1/gifs/search?q=${searchTag}&api_key=dc6zaTOxFJmzC&limit=6`;
 
